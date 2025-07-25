@@ -80,5 +80,5 @@
 
 1. (SOLVED: PULLED UP THE RX PIN (PA3) OF UART2 OF NUCLEO-H563ZI)
 
-At the first button press the Nucleo-H563ZI seems to be receiving a null ('\\0') character before the receiving the actual message. Due to which, the acknowledgement message it sends looks like "Received: ". After the second button press the program behaves as expected. The Nucleo-H563ZI maybe picking some noise which causes the registering of the null character and subsequent calling of the RxCpltCallback function.
+At the first button press the Nucleo-H563ZI seems to be receiving a null ('\\0') character before the receiving the actual message. Due to which, the acknowledgement message it sends looks like "Received: ". After the second button press the program behaves as expected. The Nucleo-H563ZI maybe picking some noise which causes the registering of the null character and subsequent calling of the 'RxCpltCallback' function.
 
